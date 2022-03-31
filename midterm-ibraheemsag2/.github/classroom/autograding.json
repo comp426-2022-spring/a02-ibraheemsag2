@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "name": "Package version",
+      "setup": "",
+      "run": "cat package.json",
+      "input": "",
+      "output": "\"version\": \"22.2.2\"",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5000
+    },
+    {
+      "name": "Package name",
+      "setup": "",
+      "run": "cat package.json",
+      "input": "",
+      "output": "\"name\": \"midterm\"",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5000
+    },
+    {
+      "name": "Package description",
+      "setup": "",
+      "run": "cat package.json",
+      "input": "",
+      "output": "\"description\": \"COMP 426 midterm exam\"",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5000
+    },
+    {
+      "name": "Package license",
+      "setup": "",
+      "run": "cat package.json",
+      "input": "",
+      "output": "\"license\": \"GPL-3.0-or-later\"",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5000
+    },
+    {
+      "name": "Package author",
+      "setup": "",
+      "run": "cat package.json",
+      "input": "",
+      "output": "\"author\":\\s\"@?((?!.*(-){2,}.*)[a-zA-Z0-9][a-zA-Z0-9-]{0,37}[a-zA-Z0-9])\"",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 5000
+    },
+    {
+      "name": "Survey verification",
+      "setup": "npm install",
+      "run": "npm test",
+      "input": "",
+      "output": "[a-f0-9]{32}",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 25000
+    }
+  ]
+}
