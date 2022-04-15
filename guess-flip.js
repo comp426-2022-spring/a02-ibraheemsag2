@@ -4,7 +4,8 @@ var arg = minimist(process.argv.slice(2));
 if(arg["call"] == "heads" || arg["call"] == "tails"){
     console.log(coin.flipACoin(arg["call"]))}
 else{
-    console.error("Wrong input")
+    console.error("Error: no input.")
+    console.error("Usage: node guess-flip --call=[heads|tails]")
     process.exit();
 }
 
