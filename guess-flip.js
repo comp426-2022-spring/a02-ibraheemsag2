@@ -6,13 +6,8 @@ if(arg["call"] == "heads" || arg["call"] == "tails"){
     console.log(coin.flipACoin(arg["call"]))}
 
 //else if(arg["call"] == null){
-else{    console.log("Error: no input.")
+else{    
+    console.log("Error: no input.")
     console.log("Usage: node guess-flip --call=[heads|tails]")
     process.exit();
 }
-/*else{
-    console.error("Usage: node guess-flip --call=[heads|tails]")
-    process.exit();
-}*/
-
-
